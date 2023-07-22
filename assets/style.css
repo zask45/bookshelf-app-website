@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@200;300;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
+
+* {
+    font-size: 16px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #81b9f1;
+    padding: 1rem;
+}
+
+header h1, label, button, span {
+    font-family: 'Noto Sans Lao', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+header h1 {
+    color: whitesmoke;
+    padding: 0.5rem
+}
+
+main {
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.516);
+}
+
+h2, h3, label {
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+input[type=text], input[type=number], input[type=search] {
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-style: italic;
+    padding: 0.5rem;
+    border: 0.1rem solid #3c8fe1;
+    border-radius: 0.75rem;
+}
+
+input[type=checkbox] {
+    margin-left: 0.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+p {
+    font-weight: 500;
+    font-style: italic;
+}
+
+article h3, article p {
+    margin-left: 3.5rem;
+}
+
+.booklist-header {
+    width: 90%;
+    margin: 0 auto 1.5rem auto;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.card {
+    width: 55%;
+    box-shadow: 0 0.5rem 1.5rem rgba(154, 160, 185, 0.2);
+    border-radius: 0.5rem;   
+    margin: 1rem auto 3rem auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.input {
+    margin: 1rem;
+}
+
+.bookshelf {
+    background-color: whitesmoke;
+    box-shadow: none;
+}
+
+.book-item {
+    width: 90%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+}
+
+.delete-button, .complete-button {
+    position: absolute;
+    margin: 0;
+    margin-top: -2.75rem;
+    margin-left: 28.5rem;
+    background-size: cover;
+    background-color: white;
+    border: none;
+    width: 2.75rem;
+    height: 2.75rem;
+}
+
+.delete-button {
+    background-image: url('img/delete-icon.svg');
+    margin-top: -3rem;
+}
+
+.delete-button:hover {
+    background-image: url('img/delete-icon-blue.svg');
+}
+
+.complete-button {
+    background-image: url('img/check-button-black-blank.svg');
+    margin-left: 0rem;
+    margin-top: -2.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.complete-button:hover {
+    background-image: url('img/complete-icon-blue.svg');
+}
+
+.complete-button:active {
+    background-image: url('img/check-button-blue.svg');
+}
+
+.pop-up {
+    box-sizing: border-box;
+    width: 35rem;
+    position: absolute;
+    left: 50%;
+    top: 180%;
+    transform: translate(-50%, 5%);
+    z-index: 9;
+    background-color: white;
+    border: solid 0.15rem #D0342C;
+    display: none;
+    margin: 0;
+}
+
+.inner {
+    text-align: center;
+    padding: 0 1.25rem 1.75rem 1.25rem;
+}
+
+.img-container {
+    width: 5rem;
+    height: 5rem;
+    background-image: url('img/warning-sign.svg');
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#input-book input[type=text], input[type=number] {
+    width: 100%;
+} 
+
+#book-submit {
+    width: 45%;
+    font-weight: bolder;
+    color: whitesmoke;
+    display: block;
+    border: none;
+    border-radius: 1.5rem; 
+    margin: 1.5rem  auto 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    background-color: #3c8ee1c1;
+    box-shadow: 0 0.25rem lightgray;
+}
+
+#book-submit:active {
+    box-shadow: 0 0.2rem grey;
+    transform: translateY(0.15rem);
+}
+
+#search-book {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1.5rem 3.5rem 0 3.5rem;
+    box-sizing: border-box;
+}
+
+#bookTitleSearch {
+    width: 100%;
+}
+
+#search-button {
+    position: absolute;
+    margin: 0;
+    margin-left: -2.25rem;
+    margin-top: 0.20rem;
+    background-image: url('img/icon-search.svg');
+    background-size: cover;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: white;
+    border: solid white;
+}
+
+#exit-button {
+    position: relative;
+    padding: 0.25rem;
+    margin-left: 33rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    color: white;
+    background-color: none;
+    background-image: url('img/close-icon-black.svg');
+    background-size: cover;
+    border: none;
+    background-color: white;
+}
+
+#exit-button:hover {
+    background-color: #ff3f35;
+    background-image: url('img/close-icon-white.svg');
+}
+
+#warning-heading, #dialog, #delete-button {
+    margin: 0.75rem 0;
+}
+
+#warning-heading {
+    text-align: center;
+    font-weight: 500;
+}
+
+#dialog {
+    font-style: normal;
+    font-weight: 100;
+}
+
+#delete-button {
+    font-size: 0.85rem;
+    background-color:  #D0342C;
+    width: 75%;
+    color: white;
+    border: none;
+    padding: 0.125rem 0.5rem;
+}
+
+#delete-button:hover {
+    background-color:  #ff3f35;
+    color: white;
+}
+
+@media screen and (max-width: 75rem) {
+    .card {
+        width: 90%;
+    }
+}
+
+
+
+
+

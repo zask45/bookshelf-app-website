@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style.css">
+        <title></title>
+    </head>
+    <body>
+        <header>
+            <h1>Bookshelf Apps</h1>
+        </header>
+        <main id="main">
+            <section class="input-section card">
+                <h2>Masukkan Buku Baru</h2>
+                <form id="input-book">
+                    <div class="input">
+                        <label for="bookTitleInput">Judul</label><br>
+                        <input id="bookTitleInput" type="text" required><br>
+                    </div>
+                    <div class="input">
+                        <label for="bookAuthorInput">Penulis</label><br>
+                        <input id="bookAuthorInput" type="text" required><br>
+                    </div>
+                    <div class="input">
+                        <label for="bookYearInput">Tahun</label><br>
+                        <input id="bookYearInput" type="number" required><br>
+                    </div>
+                    <div class="input check">
+                        <label for="bookIsAlreadyReadInput">Telah Selesai Dibaca</label>
+                        <input id="bookIsAlreadyReadInput" type="checkbox">
+                    </div>
+                    <button id="book-submit">Masukkan Buku ke Rak</button>
+                </form>
+            </section>
+            <section class="search-section card">
+                <h2>Cari Buku</h2>
+                <form id="search-book">
+                    <input id="bookTitleSearch" type="search" class="search" placeholder="Judul Buku">
+                    <button id="search-button" class="search"></button>
+                </form>
+            </section>
+            <section class="bookshelf card">
+                <h2 class="booklist-header">Belum Selesai Dibaca</h2>
+                <div id="bookIsNotReadList" class="book-list">
+                    <article class="card book-item">
+                        <h3>Judul Buku</h3>
+                        <p>Penulis, Tahun Terbit</p>
+                        <button class="complete-button"></button>
+                        <button class="edit-button"></button>
+                        <button class="delete-button"></button>
+                    </article>
+                </div>
+            </section>
+            <section class="bookshelf card">
+                <h2 class="booklist-header">Selesai Dibaca</h2>
+                <div id="bookIsReadList" class="book-list">
+                    <article class="book-item"></article>
+                </div>
+            </section>
+            <section class="pop-up" id="popup">
+                <button id="exit-button"></button>
+                <div class="inner">
+                    <h2 id="warning-heading">Hapus Buku</h2>
+                    <div class="img-container"></div>
+                    <p id="dialog">Buku akan dihapus dari rak. Data buku juga akan dihapus dari penyimpanan.</p>
+                    <button id="delete-button">Hapus Buku</button>
+                </div>
+            </section>
+        </main>
+        <script src="assets/script.js"></script>
+    </body>
+</html>

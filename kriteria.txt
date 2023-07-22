@@ -1,0 +1,10 @@
+1. Menambah buku ke rak belum selasai dibaca saat submit form {bisa}
+2. Menambah buku ke rak selesai dibaca saat submit  {bisa}
+3. Memindahkan buku antar rak {bisa}
+4. Menghapus data buku {bisa}
+5. Data buku harus bertahan pada rak saat browser ditutup {bisa}
+6. Edit Buku
+7. Search
+
+plan:
+1. buat pop up form saat edit ditekan
