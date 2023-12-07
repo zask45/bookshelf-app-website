@@ -1,9 +1,9 @@
 # bookshelf-apps
-&lt;Dicoding Submission for 'Belajar Fundamental Front End Web Development'> 
 
 A web application developed using HTML, CSS, and JavaScript. This web can save the book list to the shelf when the user saves the book data to the shelf by utilizing local storage and session storage. Users can also move books from one shelf to another and delete books from shelf.
 
-## Requirements
+## Requirement
+Requirement to run this project:
 - Web Browser with Local Storage and Session Storage (usually web browsers provide such storages)
 
 ## Demo
